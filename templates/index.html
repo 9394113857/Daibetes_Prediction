@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Prediction</title>
+</head>
+<body>
+    <h1>Diabetes Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="pregnancies">Number of pregnancies:</label>
+        <input type="number" id="pregnancies" name="pregnancies" placeholder="Enter the number of pregnancies" required><br><br>
+        <label for="glucose">Glucose level:</label>
+        <input type="number" id="glucose" name="glucose" placeholder="Enter the glucose level" required><br><br>
+        <label for="blood_pressure">Blood pressure:</label>
+        <input type="number" id="blood_pressure" name="blood_pressure" placeholder="Enter the blood pressure" required><br><br>
+        <label for="skin_thickness">Skin thickness:</label>
+        <input type="number" id="skin_thickness" name="skin_thickness" placeholder="Enter the skin thickness" required><br><br>
+        <label for="insulin">Insulin level:</label>
+        <input type="number" id="insulin" name="insulin" placeholder="Enter the insulin level" required><br><br>
+        <label for="bmi">BMI:</label>
+        <input type="number" id="bmi" name="bmi" step="0.01" placeholder="Enter the BMI" required><br><br>
+        <label for="dpf">Diabetes pedigree function:</label>
+        <input type="number" id="dpf" name="dpf" step="0.01" placeholder="Enter the diabetes pedigree function" required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter the age" required><br><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
